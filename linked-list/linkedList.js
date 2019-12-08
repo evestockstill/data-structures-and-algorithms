@@ -1,3 +1,17 @@
+// Specifications
+// Read all of these instructions carefully.Name things exactly as described.
+// Do all your work in a public repository called data - structures - and - algorithms, with a well - formatted, detailed top - level README.md.
+// Create a new branch in your repo called linked - list.
+// Your top - level readme should contain a “Table of Contents” navigation to all of your challenges and implementations so far. (Don’t forget to update it!)
+// Place this implementation in your Data - Structures folder within your repository.
+// On your branch, create…
+// C#: a new console.NET core project named LinkedList.cs.
+//   JavaScript: a folder named linkedList which contains a file called linked - list.js
+// Python: a folder named linked_list which contains a file called linked_list.py
+// Java: a package named linkedList which contains a file called LinkedList.java
+// Include any language - specific configuration files required for this challenge to become an individual component, module, library, etc.
+//   NOTE: You can find an example of this configuration for your course in your class lecture repository.
+//     Features
 // Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 // Within your LinkedList class, include a head property.Upon instantiation, an empty Linked List should be created.
 // Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
@@ -18,6 +32,3 @@
 // Will return false when searching for a value in the linked list that does not exist
 // Can properly return a collection of all the values that exist in the linked list
 // Ensure your tests are passing before you submit your solution.
-
-// Stretch Goal
-// Create a new branch called doubly - linked - list, and, using the resources available to you online, implement a doubly linked list(completely separate from your singly linked list).
