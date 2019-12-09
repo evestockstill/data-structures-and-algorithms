@@ -2,7 +2,30 @@
 //     Example
 // Input	Output
 // [4, 8, 15, 16, 23, 42], 15	2
+
 // [11, 22, 33, 44, 55, 66, 77], 90 - 1
+
+const binarySearch = (arr, val) => {
+  let leftPoint = 0;
+  let rightPoint = arr.length - 1;
+  while(leftPoint <= rightPoint) {
+    let midPoint = leftPoint + (rightPoint - 1) / 2;
+    if(arr[midPoint] === val) {
+      return midPoint;
+    } 
+    if(arr[midPoint] < val) {
+      leftPoint = midPoint + 1;
+    } 
+    else {
+      rightPoint = midPoint - 1;
+    }
+  
+  }
+  return -1;
+};
+
+
+
 // Resources
 // Wikipedia: Binary Search Algorithm
 // Stretch Goal
