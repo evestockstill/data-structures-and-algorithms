@@ -37,21 +37,45 @@
 
 
 class Node {
-  constructor(val) {
-    this.val = val;
-    this.next = null;
+  constructor(value, next = null) {
+    this.value = value;
+    this.next = next;
   }
 }
 class LinkedList {
-  head
-  insert(val) {
-    if (this.head === null) {
-      this.head = new Node(val);
-    }
-    else {
-      let n = new Node(val);
-      n.next = this.head;
-      this.head = n
-    }
+  constructor() {
+    this.head;
   }
+  insert(val) {
+    const node = new Node(val, this.head);
+    this.head = node;
+  }
+  includes(val) {
+    let searchNode = this.head;
+    while(searchNode); {
+      if(val === searchNode.value) return true;
+      searchNode = searchNode.next;
+    }
+    return false;
+  } 
+  toString() {
+    if(!this.head) return '';
+    const nodes = {};
+    let node = this.head;
+    while(node) {
+      nodes.push(node.value);
+      node = node.next;
+    }
+    return nodes.join(' ->');
+  }
+
 }
+
+
+// if (this.head === null) {
+//   this.head = new Node(value);
+// }
+// else {
+//   let n = new Node(value);
+//   n.next = this.head;
+//   this.head = n
