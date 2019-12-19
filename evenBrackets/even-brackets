@@ -1,0 +1,1 @@
+We fist need a stack to hold an array of parenthesis that are open, if the current character is an opening bracket is is pushed to the stack, if the current is a closing bracket then it is popped off the stack if they match then it is balanced. If there is one left over in the stack then it will also be no be balanced.
