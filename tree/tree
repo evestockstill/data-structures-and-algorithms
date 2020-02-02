@@ -1,0 +1,26 @@
+ST = subtree
+
+In order for the tree to be searched must have a ordering property. the value stored at any node has to be greater than values stored in left ST and small than the right ST. 
+
+Pre order traversal on the tree does the following which starts at the root. 
+ * It returns the rood node value
+ * traverse the left ST through recursively calling a pre-order function
+* traverse right ST through recursively calling a pre-order function
+        PRE-ORDER
+Maintaining an array of order for the nodes for the preOrder
+        IN-ORDER
+in order traversal preforms these steps
+* traverse the left ST by recursively call in-order function
+* returning the root node value
+* traverse the right ST by recursively call in-order function 
+        POST-ORDER
+* traverse the left ST by recursively calling the post-order function
+* traverse the right ST by recursively calling the post-order function
+* return the root node value
+
+adding a new node to the tree
+insert method performs binary search on the root node, moving to the left child if n is less than the current node or right if n is greater than the current node. This continues until the left or right child does not exist, which is where the new node will then be inserted.
+
+contains 
+preforms binary search similar to insert to determine if n exist
+
