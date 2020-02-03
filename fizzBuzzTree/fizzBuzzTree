@@ -1,0 +1,9 @@
+first you will have to make defaults of Node
+then make a tree class where you add data
+search the trees
+you will then have to find if the fizzbuzz tree has value and return tree if the tree head is null
+the value is equal to the node data
+if the left node is or right node is determined to be left or right not -
+then see if the value is %15 === 0 the value (node.data)is then equal to fizzbuzz
+if the value is %5 === 0 value (node.data) = buzz
+if the value is %3 === 0 value (node.data) = fizz
