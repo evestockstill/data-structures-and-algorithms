@@ -1,0 +1,5 @@
+In a binary tree as opposed to a binary search tree you must check every node to figure out the maximum. Traverse the tree and for each node max 3 values including the node data, node left subtree, and the nodes right subtree
+First set up the treeNode with val = val and left = right = null
+if both the root.right and root.left equal null return that number
+by using Math.max you can get the highest between the two roots. 
+It is best to use a helper method to check the current node and what the max value is so far and returning the max. By recursion the first use the root and the value of root into the helper method. check to see current node is greater than the max if it is change the max. Pass the current max to the left and right child nodes and determine by comparing the left and right subtree and the two max values and returning the one with the hightest value. 
