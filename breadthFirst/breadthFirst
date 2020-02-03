@@ -1,0 +1,6 @@
+the Breadth first search (BFS) traverses or searches the tree data structures. Starting at the root and checking the nodes to immediate left or right then moves to the next level left or right.
+How too
+start with an empty Queue 
+starting from the root insert root into the Queue
+While the Queue is not empty take the node from the Queue and insert all of the children into the Queue.
+ The Queue requires us to use the push method instead of the unshift method when handling the children of the node.  Will push them to the end. 
