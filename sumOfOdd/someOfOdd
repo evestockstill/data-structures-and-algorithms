@@ -1,0 +1,7 @@
+first you want to traverse the Binary Search tree and check to see if the current node has a odd value. If the tree is not empty find the path between any two nodes. 
+you create a Node = new Node()
+node.data = data and set the left and right node to null, and return the node.
+if the root is null and no path return false
+you will push the values of the node into an array. You will have to check if the node is % 2 if it is not divisible by 2 then push those values into the array. Once you have the odd values into an array add the sum of those values.
+
+I did have a little trouble finding out information on this one. This is my best understanding of it.
